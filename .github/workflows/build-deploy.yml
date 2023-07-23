@@ -43,4 +43,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore GithubIdp\src\GithubIdp.sln
     - name: Build
-      run: dotnet build GithubIdp\src\GithubIdp.sln --no-restore
+      run: dotnet publish GithubIdp\src\GithubIdp.sln --no-restore --configuration Release
+    - name: Deploy Oregon
+      run: |      
+        cd GithubIdp\src\GithubIdp\bin\Release\netcoreapp3.1\publish
+        cdk deploy "*" --require-approval never

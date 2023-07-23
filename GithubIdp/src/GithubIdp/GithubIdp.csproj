@@ -17,4 +17,10 @@
     -->
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="cdk.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
