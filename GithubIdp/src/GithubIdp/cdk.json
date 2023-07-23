@@ -1,5 +1,5 @@
 {
-  "app": "dotnet run --project src/GithubIdp/GithubIdp.csproj",
+  "app": "GithubIdp.exe",
   "watch": {
     "include": [
       "**"
